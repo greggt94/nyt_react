@@ -10,24 +10,16 @@ var Main = React.createClass({
 
     return (
 
-      <div className="container">
-        <div className="jumbotron">
-          <h2><strong>Which Child???</strong></h2>
-          <p><em>A journey through the whimsical world of React Routing</em></p>
-          <hr />
-          <p>
-            <Link to="/Child1"><button className="btn btn-primary btn-lg">Show Child #1</button></Link>
-            <Link to="/Child2"><button className="btn btn-danger btn-lg">Show Child #2</button></Link>
-          </p>
-        </div>
-
-        <div className="row">
-
-          {/* This code will dump the correct Child Component */}
-          {this.props.children}
-
-        </div>
-
+      <div class="container">
+          <div class="jumbotron">
+              <h2><strong>New York Times Article Scrubber</strong></h2>
+              <p>Search for articles!</p>
+              <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">Search</button>
+                <button type="button" class="btn btn-default">Results</button>
+                <button type="button" class="btn btn-default">Saved</button>
+              </div>
+          </div>
       </div>
     );
   }
