@@ -6,15 +6,22 @@ var Link = require("react-router").Link;
 var Results = React.createClass({
   render: function() {
     return (
-      <div class="col-xs-12">
-          <div class="panel panel-primary">
-              <div class="panel-heading">
-                  <h3 class="panel-title">Results</h3>
-              </div>
-              <div class="results">
-                
-              </div>
+      <div className="container">
+        <div className="col-lg-12">
+          <div className="panel panel-primary">
+            <div className="panel-heading">
+              <h3 className="panel-title">Results</h3>
+            </div>
+            <div className="panel-body">
+              <p>Here are your Results!</p>
+
+              {/* This code will allow us to automatically dump the correct GrandChild component */}
+              {this.props.children}
+              
+            </div>
+
           </div>
+        </div>
       </div>
     );
   }
